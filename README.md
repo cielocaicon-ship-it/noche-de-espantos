@@ -9,7 +9,7 @@ Un campesino o una campesina, con su perrito, defiende la finca o el rancho del 
 ## Cómo se juega
 
 - Cada espanto tiene tres partes: bajarle la mitad de la vida, liberar las almas que se llevó y vencerlo con la debilidad de su leyenda.
-- Se puede jugar solo o con amigos en línea (hasta 4, con un código de sala).
+- Se puede jugar solo o con amigos en línea (hasta 4). Para entrar a la sala de un amigo, escribes su código o escaneas el QR que le aparece en la pantalla.
 - Funciona en PC y en celular.
 
 ## Controles
