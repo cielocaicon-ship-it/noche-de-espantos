@@ -4762,7 +4762,8 @@ function codeGen(){const A='ABCDEFGHJKMNPQRSTUVWXYZ';let s='';for(let i=0;i<4;i+
 // ---------- QR: el enlace del juego con ?sala=CODIGO, para entrar sin escribir el código
 const SETUP_ONLINE_TXT=$('setupOnline').textContent;
 let salaPend=(()=>{try{const v=(new URLSearchParams(location.search).get('sala')||'').toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,8);return v.length>=4?v:'';}catch(_){return '';}})();
-function salaLink(c){return location.origin+location.pathname+'?sala='+encodeURIComponent(c);}
+// Si el juego está dentro de otra página del mismo sitio (el portafolio), el enlace lleva a esa página
+function salaLink(c){let u=location;try{if(parent!==window&&parent.location.origin===location.origin)u=parent.location;}catch(_){}return u.origin+u.pathname+'?sala='+encodeURIComponent(c);}
 let qrLib=null,qrFor='';
 function loadQR(){
   if(window.QRCode)return Promise.resolve(true);
